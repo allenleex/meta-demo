@@ -1,33 +1,110 @@
 {
-	"pages": [
-		{
-			"path": "pages/news/index/index",
-			"style": {
-				"navigationBarTitleText": "新闻列表",
-				"enablePullDownRefresh": true,
-				"onReachBottomDistance": 50,
-				"app-plus": {
-					"bounce": "vertical"
-				}
-			}
-		},
-		{
-			"path": "pages/index/index",
-			"style": {
-				"navigationBarTitleText": "uni-app"
-			}
-		}
-	],
-	"easycom": {
-		"autoscan": true,
-		"custom": {
-		  "tui-(.*)": "@/components/thorui/tui-$1/tui-$1.vue"
-		}
-	  },
-		"globalStyle": {
-		"navigationBarTextStyle": "black",
-		"navigationBarTitleText": "uni-app",
-		"navigationBarBackgroundColor": "#F8F8F8",
-		"backgroundColor": "#F8F8F8"
-	}
+  "pages": [
+    {
+      "path": "pages/news/index/index",
+      "style": {
+        "navigationBarTitleText": "新闻列表",
+        "enablePullDownRefresh": true,
+        "onReachBottomDistance": 50,
+        "app-plus": {
+          "bounce": "vertical"
+        }
+      }
+    },
+    {
+      "path": "pages/news/search/search",
+      "style": {
+        "navigationBarTitleText": "搜索",
+        "navigationBarBackgroundColor": "#fff",
+        "navigationBarTextStyle": "black",
+        "backgroundColorTop": "#fff",
+        "backgroundColorBottom": "#fff",
+        "app-plus": {
+          "bounce": "vertical"
+        }
+      }
+    },
+    {
+      "path": "pages/news/newsDetail/newsDetail",
+      "style": {
+        "navigationBarTitleText": "新闻详情",
+        "backgroundColorTop": "#fff",
+        "backgroundColorBottom": "#fff",
+        "onReachBottomDistance": 0,
+        "app-plus": {
+          "bounce": "vertical"
+        }
+      }
+    },
+    {
+      "path": "pages/news/comment/comment",
+      "style": {
+        "navigationBarTitleText": "发表评论",
+        "backgroundColorTop": "#fff",
+        "backgroundColorBottom": "#fff",
+        "app-plus": {
+          "bounce": "vertical"
+        }
+      }
+    },
+    {
+      "path": "pages/news/commentList/commentList",
+      "style": {
+        "navigationBarTitleText": "评论",
+        "backgroundColorTop": "#fff",
+        "backgroundColorBottom": "#fff",
+        "enablePullDownRefresh": true,
+        "onReachBottomDistance": 0,
+        "app-plus": {
+          "bounce": "vertical"
+        }
+      }
+    },
+    {
+      "path": "pages/news/commentReply/commentReply",
+      "style": {
+        "navigationBarTitleText": "回复",
+        "backgroundColorTop": "#fff",
+        "backgroundColorBottom": "#fff",
+        "enablePullDownRefresh": true,
+        "onReachBottomDistance": 0,
+        "app-plus": {
+          "bounce": "vertical"
+        }
+      }
+    },
+    {
+      "path": "pages/news/newsVideo/newsVideo",
+      "style": {
+        "navigationBarTitleText": "新闻详情",
+        "backgroundColorTop": "#fff",
+        "backgroundColorBottom": "#fff",
+        "onReachBottomDistance": 0,
+        "app-plus": {
+          "bounce": "vertical",
+          "titleNView": {
+            "type": "transparent"
+          }
+        }
+      }
+    },
+    {
+      "path": "pages/index/index",
+      "style": {
+        "navigationBarTitleText": "uni-app"
+      }
+    }
+  ],
+  "easycom": {
+    "autoscan": true,
+    "custom": {
+      "tui-(.*)": "@/components/thorui/tui-$1/tui-$1.vue"
+    }
+  },
+  "globalStyle": {
+    "navigationBarTextStyle": "black",
+    "navigationBarTitleText": "uni-app",
+    "navigationBarBackgroundColor": "#F8F8F8",
+    "backgroundColor": "#F8F8F8"
+  }
 }
